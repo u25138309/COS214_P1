@@ -25,7 +25,7 @@ protected:
 
 public:
     Pipeline(ConnectorFactory*);
-    static void run();
+    void run(); //Don't forget to make static
     void addStep(Transformation*);
     RunCheckpoint* createCheckpoint();
     void restore(RunCheckpoint*);
