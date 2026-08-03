@@ -1,12 +1,14 @@
-#ifndef AGGREGATEBYREGIONSTEP_H
-#define AGGREGATEBYREGIONSTEP_H
+#ifndef DEDUPLICATESTEP_H
+#define DEDUPLICATESTEP_H
 
 #include <string>
 #include <vector>
 
+#include "Transformation.h"
+
 using namespace std;
 
-class AggregateByRegionStep : public Transformation {
+class DeduplicateStep : public Transformation {
     using //
     public:
         Transformation* clone();
