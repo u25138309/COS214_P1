@@ -1,0 +1,17 @@
+#ifndef RESTAPICONNECTOR_H
+#define RESTAPICONNECTOR_H
+
+#include "Connector.h"
+
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class RestApiConnector : public Connector {
+	public:
+		RestApiConnector();
+		vector<string> extract() override;
+};
+
+#endif

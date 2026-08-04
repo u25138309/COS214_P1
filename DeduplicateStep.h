@@ -1,5 +1,5 @@
-#ifndef AGGREGATEBYREGIONSTEP_H
-#define AGGREGATEBYREGIONSTEP_H
+#ifndef DEDUPLICATESTEP_H
+#define DEDUPLICATESTEP_H
 
 #include <string>
 #include <vector>
@@ -8,9 +8,9 @@
 
 using namespace std;
 
-class AggregateByRegionStep : public Transformation {
+class DeduplicateStep : public Transformation {
     public:
-        AggregateByRegionStep();
+        DeduplicateStep();
         Transformation* clone();
         vector<string> apply(vector<string>) override;
 };
