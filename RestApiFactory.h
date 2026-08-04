@@ -9,7 +9,7 @@
 using namespace std;
 
 class RestApiFactory : public ConnectorFactory {
-	using ConnectorFactory::ConnectorFactory();
+	using ConnectorFactory::ConnectorFactory;
 	public:
 		Connector* createConnector() override;
 };

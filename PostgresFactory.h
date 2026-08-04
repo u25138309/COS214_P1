@@ -9,7 +9,7 @@
 using namespace std;
 
 class PostgresFactory : public ConnectorFactory {
-	using ConnectorFactory::ConnectorFactory();
+	using ConnectorFactory::ConnectorFactory;
 	public:
 		Connector* createConnector() override;
 };

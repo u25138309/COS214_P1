@@ -10,6 +10,7 @@
 using namespace std;
 
 class CsvFactory : public ConnectorFactory {
+	using ConnectorFactory::ConnectorFactory;
 	public:
 		Connector* createConnector();
 };

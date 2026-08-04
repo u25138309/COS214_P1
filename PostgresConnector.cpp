@@ -5,6 +5,13 @@
 
 using namespace std;
 
+PostgresConnector::PostgresConnector() : Connector("postgres") {};
+
 vector<string> PostgresConnector::extract() {
-	return "PostgressConnector -> {" + ;	//idk where the record strings come from
+    vector<string> result;
+    result.push_back("PG:001");
+    result.push_back("PG:002");
+    result.push_back("PG:002");
+    result.push_back("PG:003");
+    return result;
 }

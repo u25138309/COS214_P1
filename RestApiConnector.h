@@ -9,8 +9,8 @@
 using namespace std;
 
 class RestApiConnector : public Connector {
-	using Connector::Connector("restapi");
 	public:
+		RestApiConnector();
 		vector<string> extract() override;
 };
 

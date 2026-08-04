@@ -9,8 +9,8 @@
 using namespace std;
 
 class PostgresConnector : public Connector {
-	using Connector::Connector("postgres");
 	public:
+		PostgresConnector();
 		vector<string> extract() override;
 };
 

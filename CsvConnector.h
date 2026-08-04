@@ -9,8 +9,8 @@
 using namespace std;
 
 class CsvConnector : public Connector {
-	using Connector::Connector("csv");
 	public:
+		CsvConnector();
 		vector<string> extract() override;
 };
 
